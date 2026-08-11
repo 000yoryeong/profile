@@ -9,40 +9,11 @@
     <style>
         body { font-family: 'Noto Sans KR', sans-serif; scroll-behavior: smooth; }
 
-
-    /* 한 줄씩 스르륵 나타나는 공통 애니메이션 정의 */
-    @keyframes fadeInSequence {
-      0% {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* 애니메이션 기본 클래스 */
-    .fade-item {
-      opacity: 0; /* 처음에는 안 보이게 설정 */
-      animation: fadeInSequence 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-    }
-
-    /* 등장 순서별 지연 시간 설정 (필요한 만큼 추가 가능) */
-    .delay-1 { animation-delay: 0.1s; }
-    .delay-2 { animation-delay: 0.3s; }
-    .delay-3 { animation-delay: 0.5s; }
-    .delay-4 { animation-delay: 0.7s; }
-    .delay-5 { animation-delay: 0.9s; }
-    .delay-6 { animation-delay: 1.1s; }
-    .delay-7 { animation-delay: 1.3s; }
-    .delay-8 { animation-delay: 1.5s; }
     </style>
 
-
+</head>
 
     
-</head>
 <body class="bg-gray-50 text-gray-800">
 
     <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-50 border-b border-gray-100">
@@ -69,8 +40,7 @@
                     <span class="text-xl md:text-2xl font-medium text-gray-600 tracking-wide">Contents Workflow Director</span>
                 </h1>
                 
-                <!-- 아래 설명 부분: 세리프체(font-serif) 적용 -->
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed mb-10">
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed my-8">
                     <span class="font-medium text-gray-800">"흩어진 아이디어를 명확한 구조와 비주얼로 실현합니다."</span> <br>
                     20년의 미디어·디자인 실무와 에듀테크를 융합하여,<br> 
                     기관과 기업에 최적화된<strong> '콘텐츠·AI 워크플로우'</strong>와 
@@ -108,38 +78,38 @@
     <section id="subjects" class="py-20 bg-gray-50 border-t border-gray-100">
 
         <div class="max-w-4xl mx-auto px-6 my-12">
-    <!-- 섹션 헤딩: '문제 해결' 대신 'Core Values & Approach' 또는 '일하는 방식'으로 변경 -->
-    <div class="text-center mb-8">
-        <span class="text-xs font-semibold text-blue-600 tracking-widest uppercase">Value Proposition</span>
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mt-1">프로젝트 설계 원칙 </h2>
-    </div>
-
-    <!-- 카드가 자연스럽게 어우러지도록 정돈 -->
-    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
-        <div class="space-y-4">
-            <div class="flex items-start gap-1">
-                <span class="text-blue-600 font-bold text-lg">01.</span>
-                <p class="text-sm md:text-base text-gray-700 leading-relaxed">
-                    <strong class="font-bold text-gray-900">Clarity (명확성):</strong> 복잡하고 모호한 요구사항을 직관적인 가이드라인과 표, 시스템으로 정리합니다.
-                </p>
+            <!-- 섹션 헤딩: '문제 해결' 대신 'Core Values & Approach' 또는 '일하는 방식'으로 변경 -->
+            <div class="text-center mb-8">
+                <span class="text-xs font-semibold text-blue-600 tracking-widest uppercase">Value Proposition</span>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mt-1">프로젝트 설계 원칙 </h2>
             </div>
-            
-            <div class="flex items-start gap-1 border-t border-gray-100 pt-2">
-                <span class="text-blue-600 font-bold text-lg">02.</span>
-                <p class="text-sm md:text-base text-gray-700 leading-relaxed">
-                    <strong class="font-bold text-gray-900">Applicability (실용성):</strong> 단순히 툴 사용법에 그치지 않고, 현업 옵션에 맞춘 실무 프로세스를 고민합니다.
-                </p>
-            </div>
-            
-            <div class="flex items-start gap-1 border-t border-gray-100 pt-2">
-                <span class="text-blue-600 font-bold text-lg">03.</span>
-                <p class="text-sm md:text-base text-gray-700 leading-relaxed">
-                    <strong class="font-bold text-gray-900">Flexibility (유연성):</strong> 기관의 예산, 대상자, 목적에 맞게 레고 블록처럼 교육 모듈을 자유롭게 조합합니다.
-                </p>
+        
+            <!-- 카드가 자연스럽게 어우러지도록 정돈 -->
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div class="space-y-2.5">
+                    <div class="flex items-start gap-2">
+                        <span class="text-blue-600 font-bold text-base leading-snug">01.</span>
+                        <p class="text-sm md:text-base text-gray-700 leading-snug">
+                            <strong class="font-bold text-gray-900">Clarity (명확성):</strong> 복잡하고 모호한 요구사항을 직관적인 가이드라인과 표, 시스템으로 정리합니다.
+                        </p>
+                    </div>
+                    
+                    <div class="flex items-start gap-2 border-t border-gray-100 pt-2.5">
+                        <span class="text-blue-600 font-bold text-base leading-snug">02.</span>
+                        <p class="text-sm md:text-base text-gray-700 leading-snug">
+                            <strong class="font-bold text-gray-900">Applicability (실용성):</strong> 단순히 툴 사용법에 그치지 않고, 현업 옵션에 맞춘 실무 프로세스를 고민합니다.
+                        </p>
+                    </div>
+                    
+                    <div class="flex items-start gap-2 border-t border-gray-100 pt-2.5">
+                        <span class="text-blue-600 font-bold text-base leading-snug">03.</span>
+                        <p class="text-sm md:text-base text-gray-700 leading-snug">
+                            <strong class="font-bold text-gray-900">Flexibility (유연성):</strong> 기관의 예산, 대상자, 목적에 맞게 레고 블록처럼 교육 모듈을 자유롭게 조합합니다.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</div>
         
      <div class="max-w-5xl mx-auto px-6 py-12">
     <hr class="border-t border-gray-200">
